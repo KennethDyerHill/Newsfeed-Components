@@ -134,7 +134,7 @@ function articleCreator(data){
   articleSecondPara.textContent = data.secondParagraph;
   articleThirdPara.textContent = data.thirdParagraph;
   articleSpan.classList.add('expandButton');
-  articleSpan.textContent = '\u21E9';
+  articleSpan.textContent = '\u2BAF';
 
   article.appendChild(articleTitle);
   article.appendChild(articleDate);
