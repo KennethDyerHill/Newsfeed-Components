@@ -42,11 +42,13 @@ function CreateMenu(menuItems){
   menuItems.forEach(item => {
     const menuListItems = document.createElement('li');
     menuList.appendChild(menuListItems);
-    menuListItems.textContent = items;
+    menuListItems.textContent = item;
   });
+
   menu.appendChild(menuList);
   menu.classList.add('menu');
-  menuButton.addEventListener('click', e => {
+  
+  menuButton.addEventListener('click', () => {
   menu.classList.toggle('menu--open')
   })
   return menu;

@@ -126,7 +126,7 @@ function articleCreator(data){
   article.classList.add('article');
   
   articleTitle.textContent = data.title;
-  console.log(articleTitle.textContent);
+  // console.log(articleTitle.textContent);
 
   articleDate.classList.add('date');
   article.textContent = data.date;
