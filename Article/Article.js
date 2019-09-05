@@ -118,9 +118,9 @@ function articleCreator(data){
   const article = document.createElement('div');
   const articleTitle = document.createElement('h2');
   const articleDate = document.createElement('p');
-  const articleFirstPara = document.createElement('p');
-  const articleSecondPara = document.createElement('p');
-  const articleThirdPara = document.createElement('p');
+  const articlePara1 = document.createElement('p');
+  const articlePara2 = document.createElement('p');
+  const articlePara3 = document.createElement('p');
   const articleSpan = document.createElement('span');
 
   article.classList.add('article');
@@ -130,17 +130,17 @@ function articleCreator(data){
 
   articleDate.classList.add('date');
   article.textContent = data.date;
-  articleFirstPara.textContent = data.firstParagraph;
-  articleSecondPara.textContent = data.secondParagraph;
-  articleThirdPara.textContent = data.thirdParagraph;
+  articlePara1.textContent = data.firstParagraph;
+  articlePara2.textContent = data.secondParagraph;
+  articlePara3.textContent = data.thirdParagraph;
   articleSpan.classList.add('expandButton');
   articleSpan.textContent = '\u2BAF';
 
   article.appendChild(articleTitle);
   article.appendChild(articleDate);
-  article.appendChild(articleFirstPara);
-  article.appendChild(articleSecondPara);
-  article.appendChild(articleThirdPara);
+  article.appendChild(articlePara1);
+  article.appendChild(articlePara2);
+  article.appendChild(articlePara3);
   article.appendChild(articleSpan);
   
   articleSpan.addEventListener('click', () => {
